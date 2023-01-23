@@ -1,19 +1,24 @@
 <!doctype HTML>
 <html>
-<head>
-    <title>Equipment Evaluation</title>
-</head>
-<body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.8.0/rxjs.umd.min.js"></script>
-<script src="index.js"></script>
-<div class="equipment-input-wrapper">
-    <input id="id-input" type="number" min="0">
-    <input id="year-input" type="number" min="1900" max="2024">
-    <button id="get-button">Get Value</button>
-</div>
-<div class="equipment-valuation-wrapper">
-    <label>Market Value: <span id="market-value"></span></label>
-    <label>Auction Value: <span id="auction-value"></span></label>
-</div>
-</body>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Equipment Evaluation</title>
+    </head>
+    <body>
+        <script src="index.js"></script>
+        <div class="app">
+            <div class="evaluator">
+                <span id="error-message"></span>
+                <div class="equipment-valuation">
+                    <label>Market Value: <span id="market-value"></span></label>
+                    <label>Auction Value: <span id="auction-value"></span></label>
+                </div>
+                <div class="equipment-input">
+                    <label>ID: <input id="id-input" type="number" min="0"></label>
+                    <label>Year: <input id="year-input" type="number" min="1900" max="2024"></label>
+                    <button id="get-button">Get Value</button>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

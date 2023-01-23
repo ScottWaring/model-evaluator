@@ -1,7 +1,0 @@
-{
-  "name": "equipment-evaluator",
-  "version": "1.0.0",
-  "dependencies": {
-    "rxjs": "^7.8.0"
-  }
-}
